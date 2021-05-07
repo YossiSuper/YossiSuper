@@ -13,9 +13,10 @@
     <meta property="og:description" content=" The YossiSuper's WebSite"/>
     <meta property="og:site_name" content="YossiSuper" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/FadeinWithScrole.js"></script>
 </head>
 <header class="fixed header">
-    <h1>YossiSuper</h1>
+    <h1 class="inline">YossiSuper</h1>
 </header>
 
 <body>
@@ -23,7 +24,17 @@
     <div>
         <h1 class="BigTitle fadein">NEWS</h1>
         <div>
-            <p class="fadein">サイトを開設しました。 2021/04/22</p>
+            <ul class="fadein">
+                <li>サイトのUIを改善しました。 2021/05/07</li>
+                <li>サイトを開設しました。 2021/04/22</li>
+                <li>セクション「About」を追加しました。最近の活動などを掲載する予定です。 2021/04/22</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h1 class="BigTitle fadein">About</h1>
+        <div>
+            <span class="fadein">最近は</span>
         </div>
     </div>
     <div>
@@ -35,21 +46,5 @@
             <a href="contents/RezeroInMinecraft/index.html"><p>マインクラフトで「リゼロを再現」</p></a>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
-
-<script>
-$(function(){
-$(window).scroll(function (){
-    $('.fadein').each(function(){
-        var elemPos = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll > elemPos - windowHeight + 200){
-            $(this).addClass('scrollin');
-        }
-    });
-});
-});
-</script>
 </html>

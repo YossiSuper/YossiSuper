@@ -44,3 +44,32 @@ p{
     margin-right: 10vh;
     margin-left: 10vh;
 }
+
+.MenuInHeader{
+    display: inline;
+    text-decoration: none;
+    text-align: right;
+}
+
+.MenuInHeader{
+    text-decoration: none;
+}
+
+.inline{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+span{
+        margin-right: 10vh;
+        margin-left: 10vh;
+}
+
+ul{
+    margin-right: 10vh;
+    margin-left: 10vh;
+}
