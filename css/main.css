@@ -73,3 +73,15 @@ ul{
     margin-right: 10vh;
     margin-left: 10vh;
 }
+
+footer{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
