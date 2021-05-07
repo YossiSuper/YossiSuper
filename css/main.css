@@ -1,0 +1,46 @@
+.BigTitle{
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 10vh;
+}
+
+.fixed{
+    position: fixed;
+}
+
+body{
+    margin: 0px;
+}
+
+*{
+    margin: 0px;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+ /* 画面外にいる状態 */
+ .fadein {
+    opacity : 0.1;
+    transform : translate(0, 50px);
+    transition : all 500ms;
+    }
+    
+    /* 画面内に入った状態 */
+    .fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+.HeaderImage{
+    background-image: url(../contents/images/HeaderImage.png);
+    display: block;
+    background-position: center;
+    height: 50vh;
+}
+p{
+    margin-right: 10vh;
+    margin-left: 10vh;
+}

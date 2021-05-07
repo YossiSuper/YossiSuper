@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+        <section class="fadein">
+            <h2>情報設計</h2>
+            <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+        </section>
+    
+        <section class="fadein">
+            <h2>サイトマップ</h2>
+            <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+        </section>
+    
+        <section class="fadein">
+            <h2>ワイヤーフレーム</h2>
+            <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+        </section>
+        <div>
+
+            <section class="fadein">
+                <h2>情報設計</h2>
+                <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+            </section>
+        
+            <section class="fadein">
+                <h2>サイトマップ</h2>
+                <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+            </section>
+        
+            <section class="fadein">
+                <h2>ワイヤーフレーム</h2>
+                <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+            </section>
+            <div>
+
+                <section class="fadein">
+                    <h2>情報設計</h2>
+                    <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                </section>
+            
+                <section class="fadein">
+                    <h2>サイトマップ</h2>
+                    <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                </section>
+            
+                <section class="fadein">
+                    <h2>ワイヤーフレーム</h2>
+                    <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                </section>
+                <div>
+
+                    <section class="fadein">
+                        <h2>情報設計</h2>
+                        <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                    </section>
+                
+                    <section class="fadein">
+                        <h2>サイトマップ</h2>
+                        <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                    </section>
+                
+                    <section class="fadein">
+                        <h2>ワイヤーフレーム</h2>
+                        <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                    </section>
+                    <div>
+
+                        <section class="fadein">
+                            <h2>情報設計</h2>
+                            <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                        </section>
+                    
+                        <section class="fadein">
+                            <h2>サイトマップ</h2>
+                            <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                        </section>
+                    
+                        <section class="fadein">
+                            <h2>ワイヤーフレーム</h2>
+                            <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                        </section>
+                        <div>
+
+                            <section class="fadein">
+                                <h2>情報設計</h2>
+                                <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                            </section>
+                        
+                            <section class="fadein">
+                                <h2>サイトマップ</h2>
+                                <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                            </section>
+                        
+                            <section class="fadein">
+                                <h2>ワイヤーフレーム</h2>
+                                <p>何かしらの説明文。何かしらの説明文。何かしらの説明文。</p>
+                            </section>
+    
+    </div>
+
+    <style>
+        /* 画面外にいる状態 */
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+	}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+    </style>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>aaa
+</body>
+
+<script>
+    $(function(){
+	$(window).scroll(function (){
+		$('.fadein').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 200){
+				$(this).addClass('scrollin');
+			}
+		});
+	});
+});
+</script>
+</html>
