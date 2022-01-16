@@ -87,3 +87,7 @@ footer{
 footer a{
     color: white;
 }
+
+.FullSizeImg{
+    width: 100vw;
+}
